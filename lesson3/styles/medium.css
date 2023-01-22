@@ -1,0 +1,52 @@
+@media screen and (max-width: 780px) {
+    header h1, header h2 {
+        font-size: 2.5rem;
+        margin: 1rem;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    header nav ul li {
+        flex: 1 1 auto;
+        padding: 10px;
+    }
+    header nav ul li a {
+        font-size: 2.5rem;
+    }
+    main {
+        font-size: 25px;
+    }
+    main img {
+        width: 250px;
+        height: auto;
+        margin-left: auto;
+    }
+    footer {
+        font-size: 25px;
+        padding: 10px;
+    }
+    
+    /* CSS for target-audience.html */
+    
+    .page2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* CSS for design.html */
+    
+    .page3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .large-image {
+        display: none;
+    }
+    .small-image {
+        display: block;
+        width: 100px;
+        height: auto;
+        margin-left: 125px;
+    }
+}
