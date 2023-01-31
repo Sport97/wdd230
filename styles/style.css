@@ -42,6 +42,12 @@ main h2 {
     text-align: center;
     grid-column: 2/3;
 }
+main video {
+    justify-self: center;
+    margin-top: -150px;
+    padding: 5px;
+    grid-column: 2/3;
+}
 main ul {
     list-style-type: none;
 	overflow: hidden;
