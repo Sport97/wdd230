@@ -1,4 +1,4 @@
-const currentDate = new Date(document.lastModified); // gets todays date based on computer system
+const currentDate = new Date(document.lastModified);
 const dayNames = [
 	"Sunday",
 	"Monday",
@@ -26,9 +26,12 @@ const dayName = dayNames[currentDate.getDay()];
 const monthName = months[currentDate.getMonth()];
 const year = currentDate.getFullYear();
 const time = `${dayName}, ${monthName} ${currentDate.getDate()}, ${year}`;
-const footerYear = `© ${year} | Stephen Port - Minnesota`;
+const footerYear = `© ${year} Chamber of Commerce Project | Stephen Port | WDD 230 Project`;
 const lastModified = `Last Modified: ${currentDate}`;
+const mainnav = document.querySelector('.navigation')
+const hambutton = document.querySelector('#menu');
 
 document.querySelector("#time").textContent = time;
 document.querySelector("#footerYear").textContent = footerYear
 document.querySelector("#lastModified").textContent = lastModified
+hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);

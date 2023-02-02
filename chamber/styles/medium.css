@@ -1,7 +1,50 @@
 @media screen and (max-width: 780px) {
-    header h1, header h2 {
+    header h1 {
+        text-align: right;
         font-size: 2.5rem;
         margin: 1rem;
+        padding: 5px;
+    }
+    header h2 {
+        text-align: center;
+    }
+    header nav {
+        max-width: 760px;
+    }
+    .navigation {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .navigation li:first-child {
+        display: block;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation a {
+        display: block;
+        padding: 0.75rem;
+        text-align: left;
+        text-decoration: none;
+        color: #85D6FF;
+        font-weight: 700;
+        transition: 0.5s;
+        font-size: clamp(1rem, 2vmin, 1.5rem);
+    }
+    #menu::before {
+        content: "≡";
+        font-size: 2rem;
+    }
+    .navigation a:hover, navigation a:active {
+        color: #85D6FF;
+        background-color: black;
+    }
+    .responsive li {
+        display: block;
+    }
+    .responsive #menu::before {
+        content: "X";
     }
     header nav ul {
         display: flex;
@@ -15,12 +58,40 @@
         font-size: 2.5rem;
     }
     main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         font-size: 25px;
     }
-    main img {
-        width: 250px;
-        height: auto;
-        margin-left: auto;
+    #hero {
+        grid-column: 1/4;
+        grid-row: 1/1;
+    }
+    #event {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    #weather {
+        grid-column: 2/4;
+        grid-row: 5/6;
+    }
+    #join {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+    #news {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    .company {
+        display: none;
+    }
+    .company-small {
+        background-color:#91B8D4;
+        color: #0A2239;
+        display: block;
+        padding: 5px;
+        grid-column: 1/4;
+        grid-row: 3/4;
     }
     footer {
         font-size: 25px;
