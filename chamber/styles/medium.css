@@ -26,27 +26,4 @@
         font-size: 25px;
         padding: 10px;
     }
-    
-    /* CSS for target-audience.html */
-    
-    .page2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    
-    /* CSS for design.html */
-    
-    .page3 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .large-image {
-        display: none;
-    }
-    .small-image {
-        display: block;
-        width: 100px;
-        height: auto;
-        margin-left: 125px;
-    }
 }

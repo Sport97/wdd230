@@ -28,26 +28,4 @@
         font-size: 25px;
         padding: 10px;
     }
-
-    /* CSS for target-audience.html */
-    
-    .page2 {
-        display: block
-    }
-    
-    /* CSS for design.html */
-
-    .page3 {
-        display: block
-    }
-
-    .large-image {
-        display: none;
-    }
-    .small-image {
-        display: block;
-        width: 100px;
-        height: auto;
-        margin-left: 125px;
-    }
 }

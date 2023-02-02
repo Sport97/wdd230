@@ -67,67 +67,76 @@ header nav ul li a {
 main {
     font-weight: 500;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 25px;
+    row-gap: 25px;
     background-color: #0A2239; 
     color: #91B8D4;
     padding: 10px;
     margin: 25px auto;
 }
-main img {
-    width: 250px;
-    height: auto;
-    margin-left: 250px;
+#hero {
+    background-color:#91B8D4;
+    color: #0A2239;
+    grid-column: 2/3;
+    grid-row: 1/4;
+}
+#event {
+    background-color:#91B8D4;
+    color: #0A2239;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+#weather {
+    background-color:#91B8D4;
+    color: #0A2239;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+#join {
+    background-color:#91B8D4;
+    color: #0A2239;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+#news {
+    background-color:#91B8D4;
+    color: #0A2239;
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.company {
+    background-color:#91B8D4;
+    color: #0A2239;
+    grid-column: 3/4;
+    grid-row: 1/5;
+}
+.spotlight {
+    padding-bottom: 100px;
 }
 footer {
     font-weight: 500;
     background-color:#91B8D4;
     color: #0A2239;
     display: block;
+    /* flex-direction: column; */
     text-align: center;
     padding: 10px;
 }
-
-/* CSS for target-audience.html */
-
-.page2 {
-    font-weight: 500;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 25px;
-    background-color: #0A2239; 
-    color: #91B8D4;
-    padding: 10px;
-    margin: 25px auto;
+#name {
+    text-align: left;
+    margin-left: 225px;
+    /* margin-top: -25px; */
 }
-#scenarios ul li {
-    padding: 10px;
+#address {
+    text-align: left;
+    margin-left: 225px;
+    margin-top: -25px;
 }
-
-/* CSS for design.html */
-
-.page3 {
-    font-weight: 500;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 25px;
-    background-color: #0A2239; 
-    color: #91B8D4;
-    text-align: center;
-    padding: 10px;
-    margin: 25px auto;
+#contact {
+    text-align: right;
+    margin-top: -25px;
 }
-#color-schema a {
-    color: #85D6FF;
-}
-.large-image {
-    width: 800px;
-    height: auto;
-    margin-left: 1px;
-}
-.small-image {
-    display: none;
-}
-#typography h3, h4, p {
-    padding: 10px;
+#map {
+    text-align: right;
 }
