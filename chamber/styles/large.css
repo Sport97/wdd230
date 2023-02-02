@@ -19,7 +19,7 @@ header {
     align-items: center;
     padding: 5px;
 }
-#logo {
+.logo {
     background-color: #0A2239;
     width: 200px;
     height: auto;
