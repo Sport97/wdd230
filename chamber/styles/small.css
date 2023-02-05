@@ -1,5 +1,13 @@
 @media screen and (max-width: 375px) {
-    .logo {
+    #banner {
+        background-color: #000000;
+        color:#85D6FF;
+    }
+    #banner p {
+        text-align: center;
+        font-size: 35px;
+    }
+    #top-logo {
         width: 25%;
     }
     header h1 {
@@ -51,6 +59,9 @@
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+    #bottom-logo {
+        width: 25%;
     }
     #name {
         text-align: center;
