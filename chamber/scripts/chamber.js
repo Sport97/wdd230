@@ -35,9 +35,11 @@ document.querySelector("#time").textContent = time;
 document.querySelector("#footerYear").textContent = footerYear
 document.querySelector("#lastModified").textContent = lastModified
 
-hambutton.addEventListener("click", function() {mainnav.classList.toggle("responsive")}, false);
+hambutton.addEventListener("click", function() {
+	mainnav.classList.toggle("responsive")
+}, false);
 
-window.addEventListener("load",  function() {
+window.addEventListener("load", function() {
     if (dayName == "Monday" | dayName == "Tuesday") {
         const message = document.createElement("p");
 		message.innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 pm";
