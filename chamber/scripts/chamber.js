@@ -28,10 +28,21 @@ const year = currentDate.getFullYear();
 const time = `${dayName}, ${monthName} ${currentDate.getDate()}, ${year}`;
 const footerYear = `© ${year} Chamber of Commerce Project | Stephen Port | WDD 230 Project`;
 const lastModified = `Last Modified: ${currentDate}`;
-const mainnav = document.querySelector('.navigation')
-const hambutton = document.querySelector('#menu');
+const mainnav = document.querySelector(".navigation")
+const hambutton = document.querySelector("#menu");
 
 document.querySelector("#time").textContent = time;
 document.querySelector("#footerYear").textContent = footerYear
 document.querySelector("#lastModified").textContent = lastModified
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+
+hambutton.addEventListener("click", function() {mainnav.classList.toggle("responsive")}, false);
+
+const body = document.querySelector("body");
+
+body.addEventListener("load",  function() {
+    if (dayName !== "Monday") {
+        const message = document.createElement("p");
+		message.innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 pm";
+        document.querySelector("#banner").appendChild(message);
+    }
+});

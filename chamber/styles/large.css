@@ -79,8 +79,14 @@ header nav ul {
 header nav ul li a {
     display: block;
     text-align: center;
+    text-decoration: none;
     color: #85D6FF;
     font-size: 1.1rem;
+}
+header nav ul li a:hover {
+    background-color:#91B8D4;
+    color: #0A2239;
+    text-decoration: underline;
 }
 main {
     font-weight: 500;
