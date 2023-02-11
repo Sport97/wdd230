@@ -29,6 +29,24 @@
         grid-column: 1/2;
         grid-row: 1/1;
     }
+    .size {
+        top: 110px;
+        left: 10px;
+        width: 94%;
+        height: 15%;
+    }
+    #large {
+        display: none;
+    }
+    #medium {
+        display: none;
+    }
+    #small {
+        display: block;
+        margin-top: -1px;
+        font-size: 50px;
+        padding: 5px;
+    }
     #event {
         grid-column: 1/2;
         grid-row: 2/2;

@@ -91,6 +91,24 @@
         grid-column: 1/4;
         grid-row: 1/1;
     }
+    .size {
+        top: 83px;
+        left: 20px;
+        width: 94%;
+        height: 15%;
+    }
+    #large {
+        display: none;
+    }
+    #medium {
+        display: block;
+        margin-top: -1px;
+        font-size: 50px;
+        padding: 5px;
+    }
+    #small {
+        display: none;
+    }
     #event {
         grid-column: 1/2;
         grid-row: 5/6;

@@ -102,9 +102,43 @@ main {
 #hero {
     background-color:#91B8D4;
     color: #0A2239;
+    text-align: center;
     padding: 5px;
+    position: relative;
     grid-column: 2/3;
     grid-row: 1/4;
+}
+#hero .photo {
+    display: block;
+    width: 96%;
+    margin: 0 2%;
+}
+#hero .photo img {
+    width: 100%;
+    height: auto;
+}
+.size {
+    display: flex;
+	position: absolute;
+    justify-content: center;
+	top: 55px;
+	left: 15px;
+    width: 94%;
+    height: 15%;
+    background-color: #0A2239; 
+    color: #91B8D4;
+	opacity: 0.8;
+}
+#large {
+    margin-top: -1px;
+    font-size: 50px;
+    padding: 5px;
+}
+#medium {
+    display: none;
+}
+#small {
+    display: none;
 }
 #event {
     background-color:#91B8D4;
@@ -119,6 +153,12 @@ main {
     padding: 5px;
     grid-column: 1/2;
     grid-row: 3/4;
+}
+.conversion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
 }
 #join {
     background-color:#91B8D4;
