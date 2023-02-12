@@ -10,7 +10,8 @@ document.querySelector("#calculate").addEventListener("click",  function() {
         const temp = document.querySelector("#temp").value;
         const speed = document.querySelector("#speed").value;
         const chill = windChill(parseInt(temp), parseInt(speed));
-        return document.querySelector("#chill").value = Math.round(chill);
+        const output = Math.round(chill);
+        return document.querySelector("#chill").value = `${output} ℉`;
     }
     else {
         return document.querySelector("#chill").value = "N/A"
