@@ -47,7 +47,7 @@ header h1, header h2{
 header h2 {
     margin-top: 100px;
 }
-header p {
+#time {
     text-align: right;
     padding: 5px;
     grid-column: 3/4;
@@ -57,6 +57,7 @@ header p {
     justify-content: right;
     display: flex;
     margin-top: 100px;
+    margin-right: 5px;
     grid-column: 3/4;
     grid-row: 2/3;
     z-index: 1;
@@ -220,10 +221,114 @@ footer {
     padding: 5px;
 }
 #map {
-    text-align: right;
-    padding: 5px;
+    text-align: center;
+    padding: 10px;
 }
 .base {
     margin-top: -50px;
     padding: 5px;
+}
+
+/* Discover.html CSS */
+
+#visits {
+	color: #0A2239;
+    text-align: right;
+    padding-top: 50px;
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#discover-page {
+    background-color: #91B8D4;
+    color: #0A2239;
+}
+#stats {
+    background-color:#91B8D4;
+    color: #0A2239;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 1/1;
+}
+#stats summary {
+    font-size: 25px;
+    font-weight: 700;
+}
+#stats h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+#electric-city {
+    grid-column: 1/2;
+    grid-row: 2/2;
+}
+#electric-city img {
+    width: 500px;
+    height: auto;
+}
+#electric-city img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+#cultural-center {
+    grid-column: 2/3;
+    grid-row: 2/2;
+}
+#cultural-center img {
+    width: 500px;
+    height: auto;
+}
+#cultural-center img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+#penn-paper {
+    grid-column: 3/4;
+    grid-row: 2/2;
+}
+#penn-paper img {
+    width: 500px;
+    height: auto;
+}
+#penn-paper img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+#opening-sign {
+    grid-column: 1/2;
+    grid-row: 3/3;
+}
+#opening-sign img {
+    width: 500px;
+    height: auto;
+}
+#opening-sign img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+#scranton-city {
+    grid-column: 2/3;
+    grid-row: 3/3;
+}
+#scranton-city img {
+    width: 500px;
+    height: auto;
+}
+#scranton-city img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+#scranton-ariel {
+    grid-column: 3/4;
+    grid-row: 3/3;
+}
+#scranton-ariel img {
+    width: 500px;
+    height: auto;
+}
+#scranton-ariel img:hover {
+    transform: scale(1.1);
+    transition: 1s;
 }
