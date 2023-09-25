@@ -24,6 +24,24 @@ header nav {
     grid-column: 1/4;
     grid-row: 3/4;
 }
+header nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding: 10px;
+}
+header nav ul li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #0A2239;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+header nav ul li a:hover {
+    background-color:#91B8D4;
+    color: #85D6FF;
+    text-decoration: underline;
+}
 header img {
     width: 200px;
     height: auto;
