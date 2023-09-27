@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    letter-spacing: 0.1em;
+}
+body {
+    background-color: #0A2239; 
+    font-family: 'Rajdhani', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color:#91B8D4;
+    color: #0A2239;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+header h1, header h2 {
+    text-align: center;
+    font-weight: 600;
+    grid-column: 2/3;
+}
+main {
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    color: #91B8D4;
+    padding: 10px;
+    margin: 25px auto;
+}
+#netflix h3 {
+    background-color:#91B8D4;
+    color: #0A2239;
+    width: auto;
+    height: auto;
+    padding: 25px;
+    font-weight: 600;
+    text-align: center;
+    grid-column: 1/2;
+}
+#netflix h4 {
+    font-size: larger;
+    font-weight: 600;
+    text-align: center;
+    grid-column: 1/2;
+}
+#netflix a {
+    color: #85D6FF;
+    text-decoration: none;
+}
+#netflix img {
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    grid-column: 1/2;
+}
+#netflix p {
+    text-align: left;
+}
+#amazon h3 {
+    background-color:#91B8D4;
+    color: #0A2239;
+    width: auto;
+    height: auto;
+    padding: 25px;
+    font-weight: 600;
+    text-align: center;
+    grid-column: 1/2;
+}
+#amazon h4 {
+    font-size: larger;
+    font-weight: 600;
+    text-align: center;
+    grid-column: 1/2;
+}
+#amazon a {
+    color: #85D6FF;
+    text-decoration: none;
+}
+#amazon img {
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    grid-column: 1/2;
+}
+#amazon p {
+    text-align: left;
+}
+#papa-johns h3 {
+    background-color:#91B8D4;
+    color: #0A2239;
+    width: auto;
+    height: auto;
+    padding: 25px;
+    font-weight: 600;
+    text-align: center;
+    grid-column: 1/2;
+}
+#papa-johns h4 {
+    font-size: larger;
+    font-weight: 600;
+    text-align: center;
+    grid-column: 1/2;
+}
+#papa-johns a {
+    color: #85D6FF;
+    text-decoration: none;
+}
+#papa-johns img {
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    grid-column: 1/2;
+}
+#papa-johns p {
+    text-align: left;
+}
+footer {
+    font-weight: 500;
+    background-color:#91B8D4;
+    color: #0A2239;
+    display: block;
+    text-align: center;
+}
