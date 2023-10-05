@@ -30,6 +30,14 @@ header, nav, main, footer {
 	max-width: 1600px;
 	margin: 0 auto;
 }
+#menu {
+    background-color: #000000;
+    color: #85D6FF;
+    width: 100%;
+    font-size: 1.1rem;
+	border: none;
+	padding: 10px;
+}
 .navigation {
     background-color: #000000;
 	margin: 0 auto;
