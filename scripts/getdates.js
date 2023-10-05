@@ -10,4 +10,5 @@ document.querySelector("#lastModified").textContent = lastModified
 
 hambutton.addEventListener("click", function() {
 	mainnav.classList.toggle("responsive")
+	hambutton.classList.toggle("responsive")
 }, false);

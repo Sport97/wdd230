@@ -38,14 +38,23 @@ header, nav, main, footer {
 	border: none;
 	padding: 10px;
 }
+#menu::before {
+    background-color: #000000;
+    color: #85D6FF;
+    content: "≡";
+    font-size: 2rem;
+}
+#menu.responsive::before {
+    background-color: #000000;
+    color: #85D6FF;
+    content: "X";
+    font-size: 2rem;
+}
 .navigation {
     background-color: #000000;
 	margin: 0 auto;
     width: 100%;
     font-weight: 600;
-}
-.navigation li {
-    display: none;
 }
 .navigation ul {
     list-style-type: none;
@@ -54,7 +63,10 @@ header, nav, main, footer {
 	justify-content: center;
     padding: 10px;
 }
-.navigation a {
+.navigation li {
+    display: none;
+}
+.navigation li a {
     display: block;
     text-align: center;
     text-decoration: none;
@@ -62,19 +74,16 @@ header, nav, main, footer {
     font-size: 1.1rem;
     padding: 10px;
 }
-#menu::before {
-    content: "≡";
-    font-size: 2rem;
-}
-.navigation a:hover, navigation a:active {
-    color: #85D6FF;
+.navigation a:hover, a:active {
     background-color: black;
+    color: #85D6FF;
 }
 .responsive li {
     display: block;
+    width: 100%;
 }
-.responsive #menu::before {
-    content: "X";
+.responsive li a {
+    display: block;
 }
 main {
     width: auto;
