@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+    background-color: #0A2239; 
+    font-family: 'Rajdhani', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.1em;
+}
+header {
+    background-color:#91B8D4;
+    color: #0A2239;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    padding: 25px;
+}
+header img {
+    display: none;
+}
+header p {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 25px;
+}
+header, nav, main, footer {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+.navigation {
+    background-color: #000000;
+	margin: 0 auto;
+    width: 100%;
+    font-weight: 600;
+}
+.navigation ul {
+    list-style-type: none;
+    overflow: hidden;
+    align-items: center;
+	justify-content: center;
+    padding: 10px;
+}
+.navigation li {
+    display: block;
+}
+.navigation li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #85D6FF;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+.navigation a:hover {
+    background-color: black;
+    color: #85D6FF;
+}
+main {
+    width: auto;
+    font-weight: 500;
+    display: block;
+    color: #91B8D4;
+    margin: 25px auto;
+}
+main h1 {
+    font-weight: 600;
+    text-align: center;
+}
+.card {
+    text-align: center;
+    padding: 25px;
+}
+.card h2 {
+    background-color:#91B8D4;
+    color: #0A2239;
+}
+.card ul li, h3 {
+    text-align: center;
+    padding: 10px;
+}
+main ul {
+    list-style-type: none;
+	overflow: hidden;
+}
+main ul a{
+    color: #85D6FF;
+}
+footer {
+    font-weight: 500;
+    background-color:#91B8D4;
+    color: #0A2239;
+    display: block;
+    text-align: center;
+    padding: 25px;
+}
+footer p {
+    padding: 10px;
+}
