@@ -1,11 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+.rajdhani-light {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.rajdhani-regular {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.rajdhani-medium {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.rajdhani-semibold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.rajdhani-bold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 * {
-	margin: 0;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0;
 	padding: 0;
 }
 body {
     background-color: #0A2239; 
-    font-family: 'Rajdhani', Helvetica, sans-serif;
+    font-family: "Rajdhani", Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     letter-spacing: 0.1em;
@@ -15,9 +42,6 @@ header {
     color: #0A2239;
     display: block;
 	text-align: center;
-    padding: 25px;
-}
-header h1, h2 {
     font-size: 2rem;
     font-weight: 600;
     padding: 25px;
@@ -28,15 +52,19 @@ header, main, footer {
 }
 main {
     width: auto;
-    font-weight: 500;
     display: block;
     color: #91B8D4;
-    margin: 25px auto;
+    margin: auto;
 }
-main h3 {
+main h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 25px;
+}
+main h2 {
     background-color:#91B8D4;
     color: #0A2239;
-    font-weight: 600;
     text-align: center;
     padding: 10px;
 }
@@ -56,11 +84,11 @@ main ul li {
 .small-image {
     display: block;
 }
-#typography h3, h4, p {
+#typography h2, h3, p {
     padding: 10px;
 }
 footer {
-    font-weight: 500;
+    font-weight: 600;
     background-color:#91B8D4;
     color: #0A2239;
     display: block;

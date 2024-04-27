@@ -4,6 +4,9 @@
         grid-template-columns: 1fr 1fr;
         column-gap: 25px;
     }
+    #site-name {
+        grid-column: 1/3;
+    }
     .small-image {
         display: none;
     }
