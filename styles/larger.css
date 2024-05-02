@@ -1,6 +1,6 @@
 @media screen and (min-width: 500px) {
     
-    header img {
+    #profile {
         display: block;
         width: 200px;
         height: auto;
@@ -13,10 +13,8 @@
         display: block;
         flex: 1 1 100%;
     }
-    .navigation a:hover {
-        background-color:#91B8D4;
-        color: #0A2239;
-        text-decoration: underline;
+    #menu {
+        display: none;
     }
     main {
         display: grid;
