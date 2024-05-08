@@ -1,0 +1,90 @@
+.rajdhani-light {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.rajdhani-regular {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.rajdhani-medium {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.rajdhani-semibold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.rajdhani-bold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+* {
+    font-family: "Rajdhani", Helvetica, sans-serif;
+    font-style: normal;
+    margin: 0;
+	padding: 0;
+    letter-spacing: 0.1em;
+}
+body {
+    background-color: #0A2239; 
+}
+header {
+    position: relative;
+    background-color:#91B8D4;
+    color: #0A2239;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    font-weight: 500;
+    padding: 25px;
+}
+header p {
+    font-size: 2rem;
+    padding: 25px;
+}
+header, footer {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+main {
+    margin: 0 auto;
+    font-weight: 500;
+}
+main h1 {
+    color:#91B8D4;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+main img {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+    padding: 25px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+footer {
+    background-color:#91B8D4;
+    color: #0A2239;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    padding: 25px;
+}
+footer p {
+    padding: 10px;
+}
