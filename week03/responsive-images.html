@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stephen Port">
+    <meta name="description" content="WDD 230 - Web Frontend Development | Stephen Port | Lazy Loading">
+    <meta property="og:title" content="Stephen Port - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.ytimg.com/vi/R9Z9Y-kq-Rg/maxresdefault.jpg">
+    <meta property="og:url" content="https://sport97.github.io/wdd230/">
+    <title>Responsive Images - WDD 230 - Web Frontend Development - Stephen Port</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <p><span>WDD 230 - Web Frontend Development - Stephen Port</span></p>
+        </header>
+        <main>
+            <h1>Responsive Images</h1>
+            <div id="hero">
+                <picture>
+                    <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/hero-large.webp" alt="washington_dc_temple" width="1500" height="750">
+                </picture>
+            </div>
+        </main>
+        <footer>
+                <p id="footerYear">footerYear</p>
+                <p id="lastModified">lastModified</p>
+        </footer>
+    </div>
+    <script src="scripts/getDates.js"></script>
+</body>
+</html>
