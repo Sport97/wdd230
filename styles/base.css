@@ -127,8 +127,26 @@ main {
     width: auto;
     display: block;
     color: #91B8D4;
-    margin: auto;
+    margin: 0 auto;
     font-weight: 500;
+}
+#hero {
+    position: relative;
+}
+#hero img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+    display: block;
+}
+#hero p {
+	position: absolute;
+	background-color: #0A2239;
+	top: 0;
+    left: 0;
+    padding: 10px;
+    opacity: 0.75;
+    font-size: 3rem;
 }
 main h1 {
     text-align: center;
@@ -160,6 +178,15 @@ main ul {
 }
 main ul a{
     color: #85D6FF;
+}
+#map-small {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#map-large {
+    display: none;
 }
 footer {
     background-color:#91B8D4;
@@ -216,12 +243,21 @@ body.dark-mode {
 .dark-mode main {
     color: #91B8D4;
 }
+.dark-mode #hero {
+    display: none;
+}
 .dark-mode main h2 {
     background-color: #0A2239;
     color: #91B8D4;
 }
 .dark-mode main ul a {
     color: #91B8D4;
+}
+.dark-mode #map-small {
+    filter: invert(90%);
+}
+.dark-mode #map-large {
+    filter: invert(90%);
 }
 .dark-mode footer {
     background-color: #0A2239;

@@ -8,6 +8,8 @@ const darkButton = document.querySelector("#dark-svg");
 const lightButton = document.querySelector("#light-svg");
 const body = document.querySelector("body");
 const content = document.querySelector("#content");
+const visitsDisplay = document.querySelector("#visits");
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
 
 document.querySelector("#footerYear").textContent = footerYear
 document.querySelector("#lastModified").textContent = lastModified
@@ -26,3 +28,15 @@ lightButton.addEventListener("click", function() {
 	body.classList.toggle("dark-mode")
 	content.classList.toggle("dark-mode")
 }, false);
+
+window.addEventListener("load", function() {
+    if (numVisits !== 0) {
+        visits = `Number of visits: ${numVisits}`;
+        visitsDisplay.textContent = visits;
+    } else {
+        visitsDisplay.textContent = "First Time Here";
+    }
+
+    numVisits++;
+    localStorage.setItem("visits-ls", numVisits);
+});

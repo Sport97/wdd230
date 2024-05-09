@@ -22,7 +22,7 @@
 <body>
     <div id="content">
         <header>
-            <img id="profile" src="images/SP.png" alt="profile picture">
+            <img id="profile" src="images/SP.webp" alt="profile picture">
             <p><span>Course Home - WDD 230 - Web Frontend Development - Stephen Port</span></p>
             <img id="dark-svg" src="images/dark.svg" alt="dark-svg">
             <img id="light-svg" src="images/light.svg" alt="light-svg">
@@ -37,6 +37,13 @@
             </ul>
         </nav>
         <main>
+            <div id="hero">
+                <picture>
+                    <source srcset="images/washington_dc_temple-small.webp" media="(max-width: 400px)">
+                    <img src="images/washington_dc_temple-large.webp" alt="washington_dc_temple" width="960" height="600">
+                </picture>
+                <p>Washington DC Temple</p>
+            </div>
             <h1>WDD 230: Web Frontend Development</h1>
             <section class="card">
                 <h2>Learning Activities</h2>
@@ -55,8 +62,10 @@
             <section class="card">
                 <h2>Information</h2>
                 <h3>Weather</h3>
-                <h3>Number of Visits</h3>
+                <h3 id="visits">Number of Visits</h3>
             </section>
+            <iframe id="map-small" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90325.48960783146!2d-93.34387846892872!3d44.970667374110775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b333909377bbbd%3A0x939fc9842f7aee07!2sMinneapolis%2C%20MN!5e0!3m2!1sen!2sus!4v1695956142746!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe id="map-large" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90325.44295107714!2d-93.2614785!3d44.970696999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b333909377bbbd%3A0x939fc9842f7aee07!2sMinneapolis%2C%20MN!5e0!3m2!1sen!2sus!4v1695956470922!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </main>
         <footer>
                 <p id="footerYear">footerYear</p>
