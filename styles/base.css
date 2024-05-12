@@ -243,8 +243,11 @@ body.dark-mode {
 .dark-mode main {
     color: #91B8D4;
 }
-.dark-mode #hero {
+/* .dark-mode #hero {
     display: none;
+} */
+.dark-mode #hero p {
+    background-color: black;
 }
 .dark-mode main h2 {
     background-color: #0A2239;

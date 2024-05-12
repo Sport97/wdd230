@@ -18,7 +18,7 @@
     #menu {
         display: none;
     }
-    main {
+    #home-page {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 500px 500px;
@@ -76,5 +76,93 @@
         height: auto;
         float: left;
         padding: 5px;
+    }
+    /* Discover.html CSS */
+    #discover-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 200px;
+        grid-auto-rows: 1fr;
+        align-items: start;
+        gap: 10px;
+    }
+    #discover-page h1 {
+        /* border: 1px solid #85D6FF; */
+        grid-column: 2/4;
+        grid-row: 1;
+        font-size: 2.5rem;
+    }
+    #visits {
+        /* border: 1px solid #85D6FF; */
+        grid-column: 4/5;
+        grid-row: 1;
+        font-size: 2.5rem;
+        margin-top: 25px;
+    }
+    #stats {
+        /* border: 1px solid #85D6FF; */
+        grid-column: 1/2;
+        grid-row: 1/4;
+        margin-top: 25px;
+    }
+    #stats summary {
+        font-size: 1.5rem;
+    }
+    #stats h2 {
+        font-size: 1.5rem;
+    }
+    #electric-city {
+        /* border: 1px solid #85D6FF; */
+        grid-column: 2/3;
+        grid-row: 2;
+    }
+    #electric-city img:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+    #cultural-center {
+        /* border: 1px solid #85D6FF; */
+        grid-column: 3/4;
+        grid-row: 2;
+    }
+    #cultural-center img:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+    #penn-paper {
+        /* border: 1px solid #85D6FF; */
+        grid-column: 4/5;
+        grid-row: 2;
+    }
+    #penn-paper img:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+    #opening-sign {
+        /* border: 1px solid #85D6FF; */
+        grid-column: 2/3;
+        grid-row: 3;
+    }
+    #opening-sign img:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+    #scranton-city {
+        /* border: 1px solid #85D6FF; */
+        grid-column: 3/4;
+        grid-row: 3;
+    }
+    #scranton-city img:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+    #scranton-ariel {
+        /* border: 1px solid #85D6FF; */
+        grid-column: 4/5;
+        grid-row: 3;
+    }
+    #scranton-ariel img:hover {
+        transform: scale(1.1);
+        transition: 1s;
     }
 }
