@@ -307,6 +307,6 @@ body.dark-mode {
         opacity: 1;
     }
 }
-#discover-page p {
+#discover-page figcaption {
     padding: 10px;
 }
