@@ -1,0 +1,151 @@
+.rajdhani-light {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.rajdhani-regular {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.rajdhani-medium {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.rajdhani-semibold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.rajdhani-bold {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+* {
+    font-family: "Rajdhani", Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0;
+	padding: 0;
+    letter-spacing: 0.1em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0A2239; 
+}
+main {
+    font-weight: 500;
+    padding: 5px;
+    margin: 0 auto;
+    padding: 0 2%;
+    min-height: 20rem;
+}
+h1 {
+	color: #91B8D4;
+    text-align: center;
+    font-weight: 700;
+}
+table, th, td {
+    padding: 5px 8px;
+    border: 1px solid black;
+}
+table {
+    width: auto;
+    margin: 0 auto;
+    overflow-x: auto;
+    border-spacing: 0;
+    background-color: #91B8D4;
+	border-collapse: collapse;
+}
+caption {
+    background-color: #0A2239; 
+    color: #91B8D4;
+    display: table-caption;
+    padding: 10px;
+    caption-side: bottom;
+    font-size: .85rem;
+}
+tr:first-child th, th:first-child, .highlight {
+	background-color: black;
+	color: #91B8D4;
+}
+th {
+	background-color: #7093AE;
+    color: black;
+	font-size: larger;
+}
+tbody {
+    white-space: nowrap;
+    font-weight: 600;
+}
+tbody tr:nth-child(even) {
+	background-color: #85D6FF;
+}
+td {
+	text-align: center;
+}
+
+/* form-start.html */
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #85D6FF;;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+.wf1 legend {
+    color: #91B8D4;
+    padding: 0 .5rem;
+}
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    color: #85D6FF;
+    font-size: .9rem;
+}
+.wf1 div {
+    padding-top: 1rem;
+    color: #85D6FF;
+    font-size: .9rem;
+}
+.wf1 input[type="text"], .wf1 input[type="tel"], .wf1 input[type="email"], .wf1 input[type="url"], .wf1 input[type="date"], .wf1 select, .wf1 input[type="number"] {
+    background-color: #7093AE;
+    display: block;
+    border: solid 1px black;
+    border-radius: 6px;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+.wf1 ::placeholder {
+    color: black;
+}
+.wf1 input[type="radio"], .wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#85D6FF, #91B8D4);
+    color: black;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #85D6FF;
+}
+.wf1 input:required {
+    border-bottom: solid 8px #85D6FF;
+}
+.wf1 input:required:valid {
+    border-bottom: solid 8px #7093AE;
+}

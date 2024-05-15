@@ -130,6 +130,12 @@ main {
     margin: 0 auto;
     font-weight: 500;
 }
+a, a:link, a:visited {
+    color: #85D6FF;
+}
+a:hover {
+    color: #91B8D4;
+}
 #hero {
     position: relative;
 }
