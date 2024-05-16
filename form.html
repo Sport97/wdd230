@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stephen Port">
+    <meta name="description" content="WDD 230 - Web Frontend Development | Stephen Port | Course Assignment Portal">
+    <meta property="og:title" content="Stephen Port - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.ytimg.com/vi/R9Z9Y-kq-Rg/maxresdefault.jpg">
+    <meta property="og:url" content="https://sport97.github.io/wdd230/">
+    <title>Course Home - WDD 230 - Web Frontend Development - Stephen Port</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <img id="profile" src="images/SP.webp" alt="profile picture">
+            <p><span>Course Home - WDD 230 - Web Frontend Development - Stephen Port</span></p>
+            <img id="dark-svg" src="images/dark.svg" alt="dark-svg">
+            <img id="light-svg" src="images/light.svg" alt="light-svg">
+        </header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="form.html"><u>Form</u></a></li>
+            </ul>
+        </nav>
+        <main id="form-page">
+            <h1>Form</h1>
+            <form method="get" action="record.html" class="student">
+                <fieldset>
+                    <legend>Student Information</legend>
+                    <label>Username* <input id="uname" type="text" name="uname" required></label>
+                    <label>Password* <input id="pwd" type="password" name="pwd" pattern="[a-zA-Z0-9]{8,}" title="Password must be at least eight characters long and contain only alphanumeric characters" required></label>
+                    <label>Confirm Password* <input id="pwd_confirm" type="password" name="pwd_confirm" pattern="[a-zA-Z0-9]{8,}" title="Password must be at least eight characters long and contain only alphanumeric characters" required></label>
+                    <p id="pwd_error"></p>
+                    <label>Email* <input id="email" type="email" name="email" placeholder="student@byui.edu" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu$" title="Please enter a valid email address from the byui.edu domain" required></label>
+                    <label>Page Rating:</label>
+                    <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" list="marks">
+                    <datalist id="marks">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                    <p id="ratingDisplay">5</p>
+                </fieldset>
+                <input type="submit" id="myForm" value="Finish Student Information">
+            </form>
+        </main>
+        <footer>
+                <p id="footerYear">footerYear</p>
+                <p id="lastModified">lastModified</p>
+        </footer>
+    </div>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

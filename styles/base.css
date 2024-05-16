@@ -123,17 +123,17 @@ header, nav, main, footer {
 .responsive li a {
     display: block;
 }
-main {
+#portal-page {
     width: auto;
     display: block;
     color: #91B8D4;
     margin: 0 auto;
     font-weight: 500;
 }
-a, a:link, a:visited {
+#portal-page a, a:link, a:visited {
     color: #85D6FF;
 }
-a:hover {
+#portal-page a:hover {
     color: #91B8D4;
 }
 #hero {
@@ -154,19 +154,20 @@ a:hover {
     opacity: 0.75;
     font-size: 3rem;
 }
-main h1 {
+h1 {
+    color:#91B8D4;
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
 }
-main h2 {
+h2 {
     background-color:#91B8D4;
     color: #0A2239;
     text-align: center;
     font-weight: 600;
     padding: 10px;
 }
-main h3 {
+h3 {
     text-align: center;
     font-weight: 600;
 }
@@ -178,11 +179,11 @@ main h3 {
     text-align: center;
     padding: 10px;
 }
-main ul {
+#portal-page ul {
     list-style-type: none;
 	overflow: hidden;
 }
-main ul a{
+#portal-page ul a{
     color: #85D6FF;
 }
 #map-small {
@@ -249,9 +250,6 @@ body.dark-mode {
 .dark-mode main {
     color: #91B8D4;
 }
-/* .dark-mode #hero {
-    display: none;
-} */
 .dark-mode #hero p {
     background-color: black;
 }
