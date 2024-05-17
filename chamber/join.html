@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stephen Port">
+    <meta name="description" content="WDD 230 - Web Frontend Development | Stephen Port | Chamber">
+    <meta property="og:title" content="Stephen Port - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.ytimg.com/vi/R9Z9Y-kq-Rg/maxresdefault.jpg">
+    <meta property="og:url" content="https://sport97.github.io/wdd230/chamber">
+    <title>Chamber of Commerce Project - WDD 230 - Web Frontend Development - Stephen Port</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <img id="top-logo" src="images/ccp-logo.webp" alt="top-logo">
+            <p><span>WDD 230 - Chamber of Commerce Project - Stephen Port</span></p>
+            <img id="dark-svg" src="images/dark.svg" alt="dark-svg">
+            <img id="light-svg" src="images/light.svg" alt="light-svg">
+        </header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html"><u>Join</u></a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main id="join-page">
+            <h1>Join Scranton Chamber of Commerce Project</h1>
+            <form method="get" action="thankyou.html" class="member">
+                <fieldset>
+                    <legend>Membership Information</legend>
+                    <label id="fname">First Name*<input type="text" name="fname" required></label>
+                    <label id="lname">Last Name*<input type="text" name="lname" required></label>
+                    <label id="email">Email*<input type="email" name="email" placeholder="fnamelname@email.com" required></label>
+                    <label id="phone">Phone<input type="tel" name="phone" placeholder="012-358-1321" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business/Organization Information</legend>
+                    <label id="bname">Name* <input type="text" name="bname" required></label>
+                    <label id="position">Title/Position <input type="text" name="position" pattern="[A-Za-z\s\-]{7,}"></label>
+                    <label>Description<textarea id="desc" name="textarea" rows="5" cols="15"></textarea></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Choose Membership</legend>
+                    <label id="np"><input type="radio" name="benefits" value="np" title="non profit organizations and there is no fee"> Non-Profit Membership</label>
+                    <label id="bronze"><input type="radio" name="benefits" value="bronze" title="This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc."> Bronze Membership</label>
+                    <label id="silver"><input type="radio" name="benefits" value="silver" title="This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc."> Silver Membership</label>
+                    <label id="gold"><input type="radio" name="benefits" value="gold" title="This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc."> Gold Membership</label>
+                </fieldset>
+
+                <label><input id="timestamp" type="datetime-local" name="timestamp" hidden></label>
+                <label><input type="submit" value="Complete My Membership Form"></label>
+            </form>
+
+            <section id="membership-info">
+                <h2>Non-Profit Membership: No fees</h2>
+                <ul>
+                    <li>Access to business workshops and seminars at discounted rates or for free</li>
+                    <li>Invitation to networking events</li>
+                    <li>Listing in the chamber's non-profit directory</li>
+                    <li>One free advertisement on the chamber website or newsletter</li>
+                </ul>
+                <h2>Bronze Membership: Cost between $250 to $1,000 per year</h2>
+                <ul>
+                    <li>All non-profit membership benefits</li>
+                    <li>Increased visibility on the chamber website</li>
+                    <li>Opportunity to sponsor a chamber event or program</li>
+                    <li>Listing in the chamber's bronze member directory</li>
+                    <li>Access to member-only events and forums</li>
+                </ul>
+                <h2>Silver Membership: Cost between $500 to $2,500 per year</h2>
+                <ul>
+                    <li>All bronze membership benefits</li>
+                    <li>Additional advertisement opportunities in the chamber newsletter or on social media platforms</li>
+                    <li>Invitation to attend VIP events with other business leaders in the community</li>
+                    <li>Listing in the chamber's silver member directory</li>
+                    <li>Access to exclusive programs such as leadership development and mentorship opportunities</li>
+                </ul>
+                <h2>Gold Membership: Cost between $1,000 to $5,000 per year</h2>
+                <ul>
+                    <li>All silver membership benefits</li>
+                    <li>Exclusive access to a Chamber Business Concierge service to assist with business needs</li>
+                    <li>One-on-one consultation with Chamber staff to discuss business strategies and issues</li>
+                    <li>Listing in the chamber's gold member directory</li>
+                    <li>Recognition on the chamber website and in the chamber's annual report</li>
+                    <li>Invitation to attend and speak at chamber events</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <img id="bottom-logo" src="images/ccp-logo.webp" alt="bottom-logo">
+            <p id="name">WDD 230 - Scranton Chamber of Commerce Project</p>
+            <p id="address">Address</p>
+            <p id="contact">Contact Information</p>
+            <p id="footerYear">footerYear</p>
+            <p id="lastModified">lastModified</p>
+        </footer>
+    </div>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/darkMode.js"></script>
+</body>
+</html>
