@@ -41,30 +41,30 @@
             <h1>Join Scranton Chamber of Commerce Project</h1>
             <form method="get" action="thankyou.html" class="member">
                 <fieldset>
-                    <legend>Membership Information</legend>
+                    <legend>New Membership Information</legend>
                     <label id="fname">First Name*<input type="text" name="fname" required></label>
                     <label id="lname">Last Name*<input type="text" name="lname" required></label>
-                    <label id="email">Email*<input type="email" name="email" placeholder="fnamelname@email.com" required></label>
-                    <label id="phone">Phone*<input type="tel" name="phone" placeholder="012-358-1321" required></label>
+                    <label id="email">Email*<input type="email" name="email" placeholder="fnamelname@email.com" autocomplete="email" required></label>
+                    <label id="phone">Phone*<input type="tel" name="phone" placeholder="012-358-1321" autocomplete="tel" required></label>
                 </fieldset>
 
                 <fieldset>
                     <legend>Business/Organization Information</legend>
                     <label id="bname">Name* <input type="text" name="bname" required></label>
                     <label id="position">Title/Position <input type="text" name="position" pattern="[A-Za-z\s\-]{7,}"></label>
-                    <label>Description<textarea id="desc" name="textarea" rows="5" cols="15"></textarea></label>
+                    <label id="desc">Description<textarea name="textarea" rows="5" cols="15"></textarea></label>
                 </fieldset>
 
                 <fieldset>
-                    <legend>Choose Membership</legend>
-                    <label id="np"><input type="radio" name="benefits" value="np" title="non profit organizations and there is no fee"> Non-Profit Membership</label>
-                    <label id="bronze"><input type="radio" name="benefits" value="bronze" title="This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc."> Bronze Membership</label>
-                    <label id="silver"><input type="radio" name="benefits" value="silver" title="This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc."> Silver Membership</label>
-                    <label id="gold"><input type="radio" name="benefits" value="gold" title="This memberships have increasing costs as well as increased benefits per level like trainings, advertising (like on the home page spotlights), event discounts, etc."> Gold Membership</label>
+                    <legend>Choose Membership Level</legend>
+                    <label id="np"><input type="radio" name="benefits" value="np" required> Non-Profit Membership</label>
+                    <label id="bronze"><input type="radio" name="benefits" value="bronze" required> Bronze Membership</label>
+                    <label id="silver"><input type="radio" name="benefits" value="silver" required> Silver Membership</label>
+                    <label id="gold"><input type="radio" name="benefits" value="gold" required> Gold Membership</label>
                 </fieldset>
 
-                <label><input type="hidden" id="timestamp" name="timestamp" value=""></label>
-                <label><input type="submit" value="Complete My Membership Form"></label>
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                <label id="submitBtn"><input type="submit" name="submitBtn" value="Complete My Membership Form"></label>
             </form>
 
             <section id="membership-info">

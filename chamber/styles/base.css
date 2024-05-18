@@ -318,7 +318,6 @@ body.dark-mode {
     --shadow: 1px 1px 4px #85D6FF;
     --required: solid 8px #85D6FF;
     --fsize: 1rem;
-
 }
 #join-page {
     color: #91B8D4;
@@ -364,9 +363,13 @@ body.dark-mode {
     width: 100%;
     max-width: 400px;
     appearance: none;
+    cursor: text;
 }
 .member ::placeholder {
     color: black;
+}
+.member input[type="radio"] {
+    cursor: pointer;
 }
 .member input[type="submit"] {
     border: none;
@@ -378,6 +381,7 @@ body.dark-mode {
     max-width: 400px;
     margin: 1rem 2% 2rem 2%;
     box-shadow: var(--shadow);
+    cursor: pointer;
 }
 .member input:required {
     border-bottom: var(--required);
