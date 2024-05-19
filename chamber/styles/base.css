@@ -175,85 +175,7 @@ footer p {
     padding: 10px;
 }
 
-/* set dark mode */
-body.dark-mode {
-    background-color: black;
-}
-.dark-mode header {
-    background-color: #0A2239;
-    color: #91B8D4;
-    border-bottom: 1px solid #91B8D4;
-}
-.dark-mode #light-svg {
-    z-index: 2;
-}
-.dark-mode #menu {
-    background-color: #0A2239;
-    color: #91B8D4;
-}
-.dark-mode #menu::before {
-    background-color: #0A2239;
-    color: #91B8D4;
-}
-.dark-mode #menu.responsive::before {
-    background-color: #0A2239;
-    color: #91B8D4;
-}
-.dark-mode .navigation {
-    background-color: #0A2239;
-}
-.dark-mode .navigation li a {
-    color: #91B8D4;
-    border-right: 1px solid #91B8D4;
-    border-left: 1px solid #91B8D4;
-    border-bottom: 1px solid #91B8D4;
-}
-.dark-mode .navigation a:hover, a:active {
-    background-color: black;
-    color: #91B8D4;
-}
-.dark-mode #home-page h1 {
-    background-color:#0A2239;
-    color: #91B8D4;
-}
-.dark-mode #join {
-    border: 1px solid #91B8D4;
-}
-.dark-mode #home-page h2 {
-    background-color:#0A2239;
-    color: #91B8D4;
-}
-.dark-mode .hero {
-    background-color: #0A2239;
-}
-.dark-mode .spotlight {
-    background-color: #0A2239;
-}
-.dark-mode #discover-page {
-    background-color: black;
-}
-.dark-mode #discover-page h1 {
-    background-color: #0A2239;
-    color: #91B8D4;
-}
-.dark-mode #visits {
-    background-color: #0A2239;
-    color: #91B8D4;
-}
-.dark-mode #stats summary {
-    background-color: #0A2239;
-    color: #91B8D4;
-}
-.dark-mode #discover-page img {
-    border: 1px solid #000000;
-}
-.dark-mode footer {
-    background-color: #0A2239;
-    color: #91B8D4;
-}
-
 /* discover.html CSS */
-
 #discover-page {
     background-color: #0A2239;
     color: #91B8D4;
@@ -373,8 +295,8 @@ body.dark-mode {
 }
 .member input[type="submit"] {
     border: none;
-    background-image: linear-gradient(#85D6FF, #91B8D4);
-    color: black;
+    background-color: #91B8D4;
+    color: #0A2239;
     border-radius: 6px;
     padding: .8rem;
     width: 96%;
@@ -407,4 +329,110 @@ body.dark-mode {
     color:#91B8D4;
     text-align: center;
     font-weight: 700;
+}
+
+/* set dark mode */
+body.dark-mode {
+    background-color: black;
+}
+.dark-mode header {
+    background-color: #0A2239;
+    color: #91B8D4;
+    border-bottom: 1px solid #91B8D4;
+}
+.dark-mode #light-svg {
+    z-index: 2;
+}
+.dark-mode #menu {
+    background-color: #0A2239;
+    color: #91B8D4;
+}
+.dark-mode #menu::before {
+    background-color: #0A2239;
+    color: #91B8D4;
+}
+.dark-mode #menu.responsive::before {
+    background-color: #0A2239;
+    color: #91B8D4;
+}
+.dark-mode .navigation {
+    background-color: #0A2239;
+}
+.dark-mode .navigation li a {
+    color: #91B8D4;
+    border-right: 1px solid #91B8D4;
+    border-left: 1px solid #91B8D4;
+    border-bottom: 1px solid #91B8D4;
+}
+.dark-mode .navigation a:hover, a:active {
+    background-color: black;
+    color: #91B8D4;
+}
+.dark-mode #home-page h1 {
+    background-color:#0A2239;
+    color: #91B8D4;
+}
+.dark-mode #join {
+    border: 1px solid #91B8D4;
+}
+.dark-mode #home-page h2 {
+    background-color:#0A2239;
+    color: #91B8D4;
+}
+.dark-mode .hero {
+    background-color: #0A2239;
+}
+.dark-mode .spotlight {
+    background-color: #0A2239;
+}
+.dark-mode #discover-page {
+    background-color: black;
+}
+.dark-mode #discover-page h1 {
+    background-color: #0A2239;
+    color: #91B8D4;
+}
+.dark-mode #visits {
+    background-color: #0A2239;
+    color: #91B8D4;
+}
+.dark-mode #stats summary {
+    background-color: #0A2239;
+    color: #91B8D4;
+}
+.dark-mode #discover-page img {
+    border: 1px solid #000000;
+}
+.dark-mode .member fieldset {
+    border: 1px solid #91B8D4;
+}
+.dark-mode .member label {
+    color: #91B8D4;
+}
+.dark-mode .member input[type="text"], .dark-mode .member input[type="email"], .dark-mode .member input[type="tel"], .dark-mode .member textarea {
+    background-color: #0A2239;
+    border: 1px solid #91B8D4;
+    color: #91B8D4;
+}
+.dark-mode .member ::placeholder {
+    color: #91B8D4;
+}
+.dark-mode .member input:required {
+    border-bottom: solid 8px #91B8D4;
+}
+.dark-mode .member input:required:valid {
+    border-bottom: solid 8px #0A2239;
+}
+.dark-mode .member input[type="submit"] {
+    background-color: #0A2239;
+    color: #91B8D4;
+    box-shadow: 1px 1px 4px #91B8D4;
+}
+.dark-mode #join-page h2 {
+    background-color: #0A2239;
+    color: #91B8D4;
+}
+.dark-mode footer {
+    background-color: #0A2239;
+    color: #91B8D4;
 }
