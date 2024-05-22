@@ -47,30 +47,36 @@
             <h1>WDD 230 - Web Frontend Development - Course Portal Assignments</h1>
             <section class="card">
                 <h2>Learning Activities</h2>
-                <ul>
-                    <li><a href="week01/holygrail.html">CSS Layout Review<u></u></a></li>
-                    <li><a href="week01/media-query.html">CSS Media Queries<u></u></a></li>
+                <!-- <ul>
+                    <li><a href="week01/holygrail.html">Page Layout Review<u></u></a></li>
+                    <li><a href="https://codepen.io/Sport97/pen/jORdXwZ">Applied JavaScript<u></u></a></li>
+                    <li><a href="week01/media-query.html">Responsive Design: CSS Media Queries<u></u></a></li>
                     <li><a href="week02/design.html">Design Principles<u></u></a></li>
                     <li><a href="https://codepen.io/Sport97/pen/mdaKxMB">Responsive Hamburger Menu<u></u></a></li>
                     <li><a href="week02/bom.html">DOM Manipulation<u></u></a></li>
-                    <li><a href="week03/images/landscape.webp">WebP</a></li>
-                    <li><a href="week03/lazyload.html">Lazy Loading</a></li>
-                    <li><a href="week03/responsive-images.html">Responsive Images</a></li>
+                    <li><a href="week03/images/landscape.webp">WebP Image File Format</a></li>
+                    <li><a href="week03/lazyload.html">Native Lazy Loading</a></li>
+                    <li><a href="week03/responsive-images.html">Responsive Images - Srcset</a></li>
                     <li><a href="week03/bom.html">Web Storage API - localStorage</a></li>
                     <li><a href="https://codepen.io/Sport97/pen/vYwONeq">CSS Pseudo-Classes<u></u></a></li>
                     <li><a href="week04/images/css-combinators.png">CSS Combinators</a></li>
-                    <li><a href="week04/tablebuild.html">HTML Tables</a></li>
-                    <li><a href="week04/form-start.html">Form Tutorial</a></li>
-                    <li><a href="https://codepen.io/Sport97/pen/RwmaGXW">CSS Pseudo-Elements<u></u></a></li>
-                    <li><a href="week05/new-ward-members.json">JSON Data</a></li>
+                    <li><a href="week04/tablebuild.html">HTML Tables for Data Presentation</a></li>
+                    <li><a href="week04/form-start.html">HTML Forms</a></li>
+                    <li><a href="https://codepen.io/Sport97/pen/RwmaGXW">Pseudo-Elements<u></u></a></li>
+                    <li><a href="week05/new-ward-members.json">Working with JSON data</a></li>
                     <li><a href="week05/prophets.html">The Fetch API</a></li>
-                    <li><a href="week05/weather.html">Third-Party Weather API</a></li>
-                </ul>
+                    <li><a href="week05/weather.html">Consuming a third-party Weather API</a></li>
+                </ul> -->
             </section>
             <section class="card">
                 <h2>Information</h2>
-                <h3>Weather</h3>
-                <h3 id="visits">Number of Visits</h3>
+                <h3>Eden Prairie, Minnesota: <span id="current-temp"></span></h3>
+                <figure>
+                  <img id="weather-icon" src="" alt="">
+                  <figcaption>
+                  </figcaption>
+                </figure>
+                <h3>Number of Visits: <span id="visits"></span></h3>
             </section>
             <iframe id="map-small" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90325.48960783146!2d-93.34387846892872!3d44.970667374110775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b333909377bbbd%3A0x939fc9842f7aee07!2sMinneapolis%2C%20MN!5e0!3m2!1sen!2sus!4v1695956142746!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <iframe id="map-large" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d90325.44295107714!2d-93.2614785!3d44.970696999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b333909377bbbd%3A0x939fc9842f7aee07!2sMinneapolis%2C%20MN!5e0!3m2!1sen!2sus!4v1695956470922!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -84,6 +90,7 @@
     <script src="scripts/navigation.js"></script>
     <script src="scripts/darkMode.js"></script>
     <script src="scripts/visits.js"></script>
-    <script src="scripts/form.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 </html>
