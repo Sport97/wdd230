@@ -1,0 +1,72 @@
+{
+    "chamber_name": "Scranton Chamber of Commerce Project",
+    "location": "Scranton, PA",
+    "established": 2024,
+    "number_of_companies": 7,
+    "active": true,
+    "members": [
+        {
+            "name": "Benco Dental",
+            "address": "295 CenterPoint Blvd, Pittston, PA 18640",
+            "phone": "570-602-7000",
+            "website": "https://www.benco.com/",
+            "image": "images/benco-dental.webp",
+            "membership_level": "Gold",
+            "description": "Dental supplies distributor"
+        },
+        {
+            "name": "Dunder Mifflin",
+            "address": "1725 Slough Ave, Scranton, PA",
+            "phone": "570-987-6543",
+            "website": "http://dundermifflin.com",
+            "image": "images/dunder-mifflin.webp",
+            "membership_level": "Bronze",
+            "description": "Quality paper products since 1949; Limitless paper in a paperless world"
+        },
+        {
+            "name": "Lackawanna College",
+            "address": "501 Vine St, Scranton, PA 18509",
+            "phone": "570-961-7810",
+            "website": "https://www.lackawanna.edu/",
+            "image": "images/lackawanna-college.webp",
+            "membership_level": "Gold",
+            "description": "College"
+        },
+        {
+            "name": "Martz Group",
+            "address": "239 Old River Rd, Wilkes-Barre, PA 18702",
+            "phone": "570-821-3800",
+            "website": "https://www.martzgroup.com/",
+            "image": "images/martz.webp",
+            "membership_level": "Bronze",
+            "description": "Transportation company"
+        },
+        {
+            "name": "Penn Foster",
+            "address": "1430 W Poplar St, Scranton, PA 18509",
+            "phone": "800-275-4410",
+            "website": "https://www.pennfoster.edu/",
+            "image": "images/penn-foster.webp",
+            "membership_level": "Non-Profit",
+            "description": "Online education"
+        },
+        {
+            "name": "Scranton Gillette Communications",
+            "address": "3030 Salt Springs Rd, Youngstown, PA 18509",
+            "phone": "570-793-3000",
+            "website": "https://www.scrantongillette.com/",
+            "image": "images/scranton-gillette.webp",
+            "membership_level": "Silver",
+            "description": "Publishing and media company"
+        },
+        {
+            "name": "Times-Shamrock Communications",
+            "address": "149 Penn Ave, Scranton, PA 18503",
+            "phone": "570-348-9100",
+            "website": "https://www.timesshamrock.com/",
+            "image": "images/times-shamrock.webp",
+            "membership_level": "Silver",
+            "description": "Media company"
+        }
+    ]
+}
