@@ -21,8 +21,13 @@
     #home-page {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 500px 500px;
+        grid-template-rows: 1fr;
         gap: 10px;
+    }
+    #banner {
+        /* border: 1px solid #85D6FF; */
+        grid-column: 1/4;
+        grid-row: 1;
     }
     .hero {
         /* border: 1px solid #85D6FF; */
@@ -30,7 +35,7 @@
         justify-content: center;
         align-items: center;
         grid-column: 2/3;
-        grid-row: 1;
+        grid-row: 2;
     }
     .hero h1 {
         font-size: 2.5rem;
@@ -47,27 +52,29 @@
     .event {
         /* border: 1px solid #85D6FF; */
         grid-column: 1/2;
-        grid-row: 1;
+        grid-row: 2;
     }
     .weather {
         /* border: 1px solid #85D6FF; */
-        grid-column: 1/2;
-        grid-row: 2;
-    }
-    .news {
-        /* border: 1px solid #85D6FF; */
-        grid-column: 2/3;
+        grid-column: 3/4;
         grid-row: 2;
     }
     .spotlight {
         /* border: 1px solid #85D6FF; */
-        grid-column: 3/4;
-        grid-row: 1/3;
-        background-color: #91B8D4;
-        color: #0A2239;
+        grid-column: 1/4;
+        grid-row: 3;
+    }
+    .spotlight {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
     }
     .spotlight h2 {
-        padding-bottom: 275px;
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+    .member-card {
+        grid-row: 2;
     }
     #bottom-logo {
         display: block;

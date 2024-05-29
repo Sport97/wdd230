@@ -137,7 +137,32 @@ header, nav, main, footer {
     margin: auto;
     font-weight: 500;
 }
-.hero, .event, .weather, .news, .spotlight {
+#banner {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+#banner p {
+    background-color: #91B8D4;
+    color: #0A2239;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 25px;
+}
+#close-banner {
+    background-color: #91B8D4;
+    border: none;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+#banner.close {
+    display: none;
+}
+.hero, .event, .weather {
     margin: 25px;
 }
 .hero h1 {
@@ -156,13 +181,25 @@ header, nav, main, footer {
 	border: none;
 	padding: 10px;
     z-index: 1;
+    cursor: pointer;
 }
-.event h2, .weather h2, .news h2, .spotlight h2 {
+.event h2, .weather h2, .spotlight h2 {
     background-color:#91B8D4;
     color: #0A2239;
     text-align: left;
     padding: 10px;
     font-weight: 600;
+}
+.spotlight h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.weather {
+    color:#91B8D4;
+    text-align: center;
+}
+.weather span {
+    font-weight: 500;
 }
 footer {
     background-color:#91B8D4;
@@ -366,8 +403,7 @@ footer p {
     width: 200px;
     height: auto;
     object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
 }
@@ -385,7 +421,7 @@ footer p {
 }
 .member-card h2 {
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 .member-card p {
     margin-bottom: 10px;
@@ -405,6 +441,10 @@ footer p {
 }
 .details p:nth-of-type(4)::before {
     content: "Membership Level: ";
+    font-weight: 700;
+}
+.details p:nth-of-type(5)::before {
+    content: "Description: ";
     font-weight: 700;
 }
 .member-card a {

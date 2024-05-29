@@ -34,13 +34,15 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
         <main id="home-page">
+            <div id="banner">
+                <button id="close-banner">✖</button>
+            </div>
             <section class="hero">
                 <h1>Scranton Chamber of Commerce Project</h1>
-                <button id="join">Call to Action</button>
+                <button id="join">Join Chamber of Commerce</button>
                 <img id="hero-image" src="images/placeholder.svg" alt="placeholder-svg">
             </section>
             <section class="event">
@@ -48,21 +50,24 @@
             </section>
             <section class="weather">
                 <h2>Weather</h2>
-            </section>
-            <section class="news">
-                <h2>News Release</h2>
+                <h3>Today: <span id="current-temp"></span></h3>
+                <figure>
+                  <img id="weather-icon" src="#" alt="#">
+                  <figcaption>
+                  </figcaption>
+                </figure>
+                <div id="forecast">
+                </div>
             </section>
             <section class="spotlight">
-                <h2>Spotlight 1</h2>
-                <h2>Spotlight 2</h2>
-                <h2>Spotlight 3</h2>
+                <h2 id="company-spotlight">Company Spotlights</h2>
             </section>
         </main>
         <footer>
             <img id="bottom-logo" src="images/ccp-logo.webp" alt="bottom-logo">
             <p id="name">WDD 230 - Scranton Chamber of Commerce Project</p>
-            <p id="address">Address</p>
-            <p id="contact">Contact Information</p>
+            <p id="address">Scranton Business Park, Suite 200</p>
+            <p id="contact">570-904-5026</p>
             <p id="footerYear">footerYear</p>
             <p id="lastModified">lastModified</p>
         </footer>
@@ -70,5 +75,8 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/navigation.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>
