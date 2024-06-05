@@ -40,16 +40,7 @@
     .hero h1 {
         font-size: 2.5rem;
     }
-    #join {
-        z-index: 2;
-    }
-    #hero-image {
-        position: absolute;
-        top: 75%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .event {
+    .events {
         /* border: 1px solid #85D6FF; */
         grid-column: 1/2;
         grid-row: 2;

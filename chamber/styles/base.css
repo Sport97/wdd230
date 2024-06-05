@@ -162,7 +162,7 @@ header, nav, main, footer {
 #banner.close {
     display: none;
 }
-.hero, .event, .weather {
+.hero, .events, .weather {
     margin: 25px;
 }
 .hero h1 {
@@ -173,6 +173,22 @@ header, nav, main, footer {
     font-size: 3rem;
     font-weight: 700;
 }
+.hero img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+    display: block;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 #join {
     background-color: #000000;
     color: #85D6FF;
@@ -180,15 +196,44 @@ header, nav, main, footer {
     font-size: 1.1rem;
 	border: none;
 	padding: 10px;
-    z-index: 1;
+    z-index: 2;
     cursor: pointer;
 }
-.event h2, .weather h2, .spotlight h2 {
+.events h2, .weather h2, .spotlight h2 {
     background-color:#91B8D4;
     color: #0A2239;
     text-align: left;
     padding: 10px;
     font-weight: 600;
+}
+.event h3 {
+    background-color:#91B8D4;
+    color: #0A2239;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.event p {
+    color:#91B8D4;
+    text-align: center;
+    padding: 3px;
+}
+.event p:nth-of-type(1)::before {
+    content: "Date: ";
+    font-weight: 700;
+}
+.event p:nth-of-type(2)::before {
+    content: "Time: ";
+    font-weight: 700;
+}
+.event p:nth-of-type(3)::before {
+    content: "Address: ";
+    font-weight: 700;
+}
+.event p:nth-of-type(4)::before {
+    content: "Description: ";
+    font-weight: 700;
 }
 .spotlight h2 {
     text-align: center;
@@ -198,8 +243,16 @@ header, nav, main, footer {
     color:#91B8D4;
     text-align: center;
 }
+.weather h2 {
+    background-color: #91B8D4;
+    color: #0A2239;
+}
 .weather span {
     font-weight: 500;
+}
+.weather h3 {
+    border-top: 1px solid #85D6FF;
+    padding: 10px;
 }
 footer {
     background-color:#91B8D4;
@@ -507,18 +560,35 @@ body.dark-mode {
     background-color:#0A2239;
     color: #91B8D4;
 }
-.dark-mode #join {
-    border: 1px solid #91B8D4;
-}
-.dark-mode #home-page h2 {
-    background-color:#0A2239;
+.dark-mode #banner p {
+    background-color: #0A2239;
     color: #91B8D4;
 }
-.dark-mode .hero {
+.dark-mode #close-banner {
     background-color: #0A2239;
 }
-.dark-mode .spotlight {
+.dark-mode .hero  {
+    background-color: black;
+}
+.dark-mode #join {
+    border: 1px solid #91B8D4;
+    background-color:#0A2239;
+}
+.dark-mode .events h2 {
     background-color: #0A2239;
+    color: #91B8D4;
+}
+.dark-mode .event h3 {
+    background-color: #0A2239;
+    color: #91B8D4;
+}
+.dark-mode .weather h2 {
+    background-color: #0A2239;
+    color: #91B8D4;
+}
+.dark-mode .spotlight h2 {
+    background-color: #0A2239;
+    color: #91B8D4;
 }
 .dark-mode #discover-page {
     background-color: black;
@@ -565,6 +635,14 @@ body.dark-mode {
 }
 .dark-mode #join-page h2 {
     background-color: #0A2239;
+    color: #91B8D4;
+}
+.dark-mode #toggle-view {
+    background-color:#0A2239;
+    color: #91B8D4;
+}
+.dark-mode .member-card {
+    background-color:#0A2239;
     color: #91B8D4;
 }
 .dark-mode footer {
